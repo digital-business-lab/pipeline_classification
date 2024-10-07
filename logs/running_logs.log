@@ -1,0 +1,141 @@
+[2024-10-06 21:10:19,986: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-06 21:10:19,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-06 21:10:19,994: INFO: common: created directory at: artifacts]
+[2024-10-06 21:10:19,997: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-10-06 21:11:46,928: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-10-07 11:58:10,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 11:58:10,439: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 11:58:10,440: INFO: common: created directory at: artifacts]
+[2024-10-07 11:58:10,443: INFO: common: created directory at: artifacts\training]
+[2024-10-07 12:00:27,853: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 12:00:27,860: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 12:00:27,863: INFO: common: created directory at: artifacts]
+[2024-10-07 12:00:27,865: INFO: common: created directory at: artifacts\training]
+[2024-10-07 12:12:07,033: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 12:12:07,041: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 12:12:07,043: INFO: common: created directory at: artifacts]
+[2024-10-07 12:12:21,510: INFO: common: json file saved at: scores.json]
+[2024-10-07 12:12:24,729: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-10-07 12:12:25,495: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpttcjw4rw\model\data\model\assets]
+[2024-10-07 12:13:09,646: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 12:13:09,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 12:13:09,653: INFO: common: created directory at: artifacts]
+[2024-10-07 12:13:28,648: INFO: common: json file saved at: scores.json]
+[2024-10-07 12:13:31,147: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-10-07 12:13:31,830: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpa7dfz9vk\model\data\model\assets]
+[2024-10-07 12:13:40,627: INFO: credentials: Found credentials in shared credentials file: ~/.aws/credentials]
+[2024-10-07 12:31:23,281: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 12:31:23,286: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 12:31:23,288: INFO: common: created directory at: artifacts]
+[2024-10-07 12:31:35,919: INFO: common: json file saved at: scores.json]
+[2024-10-07 12:31:37,942: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-10-07 12:31:38,598: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpp9snr2iw\model\data\model\assets]
+[2024-10-07 13:02:08,763: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 13:02:08,768: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 13:02:08,771: INFO: common: created directory at: artifacts]
+[2024-10-07 13:02:21,640: INFO: common: json file saved at: scores.json]
+[2024-10-07 13:02:23,791: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-10-07 13:02:24,551: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmp1ubotb55\model\data\model\assets]
+[2024-10-07 13:10:12,536: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 13:10:12,540: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 13:10:12,542: INFO: common: created directory at: artifacts]
+[2024-10-07 13:10:35,601: INFO: common: json file saved at: scores.json]
+[2024-10-07 13:10:39,021: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-10-07 13:10:39,733: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmp8ci704ld\model\data\model\assets]
+[2024-10-07 13:35:58,353: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-10-07 13:35:58,355: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 13:35:58,357: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 13:35:58,357: INFO: common: created directory at: artifacts]
+[2024-10-07 13:35:58,358: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-07 13:35:58,359: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-10-07 13:43:16,218: ERROR: stage_01_data_ingestion: ("Connection broken: ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)", ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))]
+Traceback (most recent call last):
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\urllib3\response.py", line 444, in _error_catcher
+    yield
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\urllib3\response.py", line 567, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\urllib3\response.py", line 533, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\socket.py", line 681, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Eine vorhandene Verbindung wurde vom Remotehost geschlossen
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\urllib3\response.py", line 628, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\urllib3\response.py", line 593, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\urllib3\response.py", line 461, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)", ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 27, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\user\desktop\bhs\coding\3_ml_ops_pipeline_aws\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    raise e
+  File "c:\users\user\desktop\bhs\coding\3_ml_ops_pipeline_aws\src\cnnClassifier\components\data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\gdown\download.py", line 368, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\user\miniconda3\envs\mlproj\lib\site-packages\requests\models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)", ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))
+[2024-10-07 13:43:56,492: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.2.116:8080]
+[2024-10-07 13:43:56,493: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-10-07 13:44:08,912: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 13:44:08] "GET / HTTP/1.1" 200 -]
+[2024-10-07 13:46:17,354: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 13:46:17] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 13:46:23,396: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 13:46:23] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 13:46:30,011: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 13:46:30] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 14:11:47,017: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 14:11:47] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 14:23:41,475: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000019F86AEDB80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-10-07 14:23:41,478: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 14:23:41] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 14:26:00,426: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.2.116:8080]
+[2024-10-07 14:26:00,426: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-10-07 14:26:00,540: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 14:26:00] "GET / HTTP/1.1" 200 -]
+[2024-10-07 14:27:22,776: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 14:27:22] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:24:31,760: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:24:31] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:24:38,654: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:24:38] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:38:42,600: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:38:42] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:38:51,891: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000205F57FCD30> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-10-07 15:38:51,896: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:38:51] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:38:59,135: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000205F57FCDC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-10-07 15:38:59,140: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:38:59] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:42:20,836: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:42:20] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 15:42:40,047: INFO: _internal: 127.0.0.1 - - [07/Oct/2024 15:42:40] "POST /predict HTTP/1.1" 200 -]
+[2024-10-07 16:47:28,032: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 16:47:28,052: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 16:47:28,059: INFO: common: created directory at: artifacts]
+[2024-10-07 16:49:18,078: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 16:49:18,084: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 16:49:18,086: INFO: common: created directory at: artifacts]
+[2024-10-07 16:49:46,405: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-07 16:49:46,409: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-07 16:49:46,411: INFO: common: created directory at: artifacts]
+[2024-10-07 16:50:01,512: INFO: common: json file saved at: scores.json]
+[2024-10-07 16:50:03,269: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-10-07 16:50:03,792: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpxq474j5_\model\data\model\assets]
