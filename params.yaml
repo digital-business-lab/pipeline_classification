@@ -1,8 +1,36 @@
 AUGMENTATION: True
-IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
-BATCH_SIZE: 16
+IMAGE_SIZE: [160, 160, 3] # 224,224,3 as per VGG 16 model
+BATCH_SIZE: 32
 INCLUDE_TOP: False
-EPOCHS: 1
+EPOCHS: 10
 CLASSES: 2
+MODEL_NAME: MobileNetV2 # wird nur als Deklaration in MFflow verwendet
 WEIGHTS: imagenet
-LEARNING_RATE: 0.01
+LEARNING_RATE: 0.0001
+VALIDATION_SPLIT: 0.3
+STORAGE_FORMAT: reformat
+# Angabe bei Storage_Format muss reformat oder original sein!
+# Programm erwartet untenstehende Ordnerstruktur!
+# Bei original wird nichts gemacht! D.h. Datensatz besitzt bereits diese Struktur!
+# Bei reformat wird Datensatz in die richtige Ordnerstruktur umgebaut!
+# Dabei muss aber der reformat Datensatz folgende Ornderstruktur aufweisen!
+# Falsche/Reformat Ornderstruktur
+# artifacts/data_ingestion/dataset_name/
+#     train/
+#         class1/
+#             - image1.jpg
+#         class2/
+#             - image2.jpg
+#     valid/
+#         class1/
+#             - image3.jpg
+#         class2/
+#             - image4.jpg
+# Passende Ordnerstruktur
+# artifacts/data_ingestion/dataset_name/
+#     class1/
+#         - image1.jpg
+#         - image3.jpg
+#     class2/
+#         - image2.jpg
+#         - image4.jpg

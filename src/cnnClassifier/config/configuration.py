@@ -29,7 +29,8 @@ class ConfigurationManager:
             root_dir=config.root_dir,
             source_URL=config.source_URL,
             local_data_file=config.local_data_file,
-            unzip_dir=config.unzip_dir 
+            unzip_dir=config.unzip_dir,
+            storage_format=self.params.get("STORAGE_FORMAT", "original")
         )
 
         return data_ingestion_config
@@ -59,7 +60,8 @@ class ConfigurationManager:
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
         params = self.params
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Chest-CT-Scan-data")
+
+        training_data = os.path.join(self.config.training.training_data)
         create_directories([
             Path(training.root_dir)
         ])
@@ -72,23 +74,26 @@ class ConfigurationManager:
             params_epochs=params.EPOCHS,
             params_batch_size=params.BATCH_SIZE,
             params_is_augmentation=params.AUGMENTATION,
-            params_image_size=params.IMAGE_SIZE
+            params_image_size=params.IMAGE_SIZE,
+            params_validation_split=params.VALIDATION_SPLIT
         )
 
         return training_config
     
 
 
-
     def get_evaluation_config(self) -> EvaluationConfig:
+        evaluation = self.config.training
+        mlflow = self.config.mlflow
+
         eval_config = EvaluationConfig(
-            path_of_model="artifacts/training/model.h5",
-            training_data="artifacts/data_ingestion/Chest-CT-Scan-data",
-            mlflow_uri="http://ec2-3-68-192-238.eu-central-1.compute.amazonaws.com:5000/",
+            path_of_model=evaluation.trained_model_path,
+            training_data=evaluation.training_data,
+            mlflow_uri=mlflow.mlflow_uri,
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
-            params_batch_size=self.params.BATCH_SIZE
+            params_batch_size=self.params.BATCH_SIZE,
+            params_validation_split=self.params.VALIDATION_SPLIT,
+            params_model_name=self.params.MODEL_NAME
         )
         return eval_config
-
-      

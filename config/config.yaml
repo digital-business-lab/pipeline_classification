@@ -3,9 +3,9 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing
+  source_URL: https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip #change
   local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  unzip_dir: artifacts/data_ingestion/extracted
 
 
 
@@ -16,8 +16,11 @@ prepare_base_model:
 
 
 
-
 training:
   root_dir: artifacts/training
   trained_model_path: artifacts/training/model.h5
+  training_data: artifacts/data_ingestion/cats_and_dogs_filtered #change
+
+mlflow:
+  mlflow_uri: http://ec2-18-184-143-36.eu-central-1.compute.amazonaws.com:5000/ #change
 

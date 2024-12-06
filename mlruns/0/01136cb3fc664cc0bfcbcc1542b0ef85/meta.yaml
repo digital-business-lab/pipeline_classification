@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/BHS/Coding/3_ML_Ops_Pipeline_AWS/mlruns/0/01136cb3fc664cc0bfcbcc1542b0ef85/artifacts
+end_time: 1732728026111
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 01136cb3fc664cc0bfcbcc1542b0ef85
+run_name: magnificent-colt-863
+run_uuid: 01136cb3fc664cc0bfcbcc1542b0ef85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732728001320
+status: 4
+tags: []
+user_id: 497c

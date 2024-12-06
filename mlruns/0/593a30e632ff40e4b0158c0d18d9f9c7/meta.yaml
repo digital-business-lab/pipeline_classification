@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/BHS/Coding/3_ML_Ops_Pipeline_AWS/mlruns/0/593a30e632ff40e4b0158c0d18d9f9c7/artifacts
+end_time: 1732878824710
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 593a30e632ff40e4b0158c0d18d9f9c7
+run_name: stately-vole-300
+run_uuid: 593a30e632ff40e4b0158c0d18d9f9c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732878796966
+status: 4
+tags: []
+user_id: 497c

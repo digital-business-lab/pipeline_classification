@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/BHS/Coding/3_ML_Ops_Pipeline_AWS/mlruns/0/b3e39f3b9d8f4831942271eff201b378/artifacts
+end_time: 1732288631410
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b3e39f3b9d8f4831942271eff201b378
+run_name: unruly-ram-297
+run_uuid: b3e39f3b9d8f4831942271eff201b378
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732288624249
+status: 4
+tags: []
+user_id: 497c

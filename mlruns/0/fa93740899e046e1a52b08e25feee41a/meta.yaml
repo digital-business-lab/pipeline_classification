@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/BHS/Coding/3_ML_Ops_Pipeline_AWS/mlruns/0/fa93740899e046e1a52b08e25feee41a/artifacts
+end_time: 1732211065725
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa93740899e046e1a52b08e25feee41a
+run_name: youthful-deer-767
+run_uuid: fa93740899e046e1a52b08e25feee41a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732211055544
+status: 4
+tags: []
+user_id: 497c

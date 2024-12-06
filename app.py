@@ -32,7 +32,7 @@ def home():
 @cross_origin()
 def trainRoute():
     os.system("python main.py")
-    # os.system("dvc repro")
+    # os.system("dvc repro") # ODER HIER DIE DVC Pipeline starten!
     return "Training done successfully!"
 
 

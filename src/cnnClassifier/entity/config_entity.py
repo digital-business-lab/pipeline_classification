@@ -8,7 +8,7 @@ class DataIngestionConfig:
     source_URL: str
     local_data_file: Path
     unzip_dir: Path
-
+    storage_format: str 
 
 
 @dataclass(frozen=True)
@@ -35,7 +35,7 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
-
+    params_validation_split: float
 
 
 @dataclass(frozen=True)
@@ -46,3 +46,5 @@ class EvaluationConfig:
     mlflow_uri: str
     params_image_size: list
     params_batch_size: int
+    params_validation_split: float
+    params_model_name: str

@@ -15,8 +15,7 @@ class Evaluation:
     def _valid_generator(self):
 
         datagenerator_kwargs = dict(
-            rescale = 1./255,
-            validation_split=0.30
+            validation_split=self.config.params_validation_split
         )
 
         dataflow_kwargs = dict(
@@ -69,6 +68,6 @@ class Evaluation:
                 # There are other ways to use the Model Registry, which depends on the use case,
                 # please refer to the doc for more information:
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+                mlflow.keras.log_model(self.model, "model", registered_model_name=self.config.params_model_name)
             else:
                 mlflow.keras.log_model(self.model, "model")

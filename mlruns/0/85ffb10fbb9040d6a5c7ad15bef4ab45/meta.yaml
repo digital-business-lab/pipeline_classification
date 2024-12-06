@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/BHS/Coding/3_ML_Ops_Pipeline_AWS/mlruns/0/85ffb10fbb9040d6a5c7ad15bef4ab45/artifacts
+end_time: 1732202155862
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 85ffb10fbb9040d6a5c7ad15bef4ab45
+run_name: enthused-bat-228
+run_uuid: 85ffb10fbb9040d6a5c7ad15bef4ab45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732202148198
+status: 4
+tags: []
+user_id: 497c

@@ -8,14 +8,22 @@ from cnnClassifier.entity.config_entity import PrepareBaseModelConfig
 
 
 
-
+# Hier nehmen das ich BaseModell sowie UpdatedModell (z.B. zusätzliche Layer etc.)
 class PrepareBaseModel:
     def __init__(self, config: PrepareBaseModelConfig):
         self.config = config
 
-    
+
     def get_base_model(self):
+        """ VGG16 Base Model
         self.model = tf.keras.applications.vgg16.VGG16(
+            input_shape=self.config.params_image_size,
+            weights=self.config.params_weights,
+            include_top=self.config.params_include_top
+        )
+        """
+        #MobileNetV2
+        self.model = tf.keras.applications.MobileNetV2(
             input_shape=self.config.params_image_size,
             weights=self.config.params_weights,
             include_top=self.config.params_include_top
@@ -34,24 +42,52 @@ class PrepareBaseModel:
             for layer in model.layers[:-freeze_till]:
                 model.trainable = False
 
-        flatten_in = tf.keras.layers.Flatten()(model.output)
-        prediction = tf.keras.layers.Dense(
-            units=classes,
-            activation="softmax"
-        )(flatten_in)
+        # Input Layer 
+        input_layer = tf.keras.layers.Input(shape=model.input_shape[1:])
+        
+        # Rescaling-Layer hinzufügen
+        rescaling_layer = tf.keras.layers.Rescaling(1./127.5, offset=-1)(input_layer)
 
+        # Base Model mit Rescaling verbinden
+        base_output = model(rescaling_layer)
+
+        # Add GlobalAveragePooling2D
+        global_pooling = tf.keras.layers.GlobalAveragePooling2D()(base_output)
+
+        # Add Dropout
+        dropout = tf.keras.layers.Dropout(0.2)(global_pooling)  # Dropout rate von 0.2
+
+        # Dense Layer dynamisch basierend auf der Anzahl der Klassen
+        if classes == 1:
+            # Binary Classification
+            activation = 'sigmoid'
+            loss = tf.keras.losses.BinaryCrossentropy()
+            metrics = [tf.keras.metrics.BinaryAccuracy(threshold=0.5, name="accuracy")]
+        else:
+            # Multi-Class Classification
+            activation = 'softmax'
+            loss = tf.keras.losses.CategoricalCrossentropy()
+            metrics = ["accuracy"]
+
+        # Finaler Layer (Dense)
+        prediction = tf.keras.layers.Dense(
+            units=classes,  # Anzahl der Klassen
+            activation=activation  # Dynamische Auswahl der Aktivierungsfunktion
+        )(dropout)
+
+        # Zusammenfassung finales Modell
         full_model = tf.keras.models.Model(
-            inputs=model.input,
+            inputs=input_layer,
             outputs=prediction
         )
 
+        # Kompilieren Modell
         full_model.compile(
-            optimizer=tf.keras.optimizers.SGD(learning_rate=learning_rate),
-            loss=tf.keras.losses.CategoricalCrossentropy(),
-            metrics=["accuracy"]
+            optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
+            loss=loss,
+            metrics=metrics
         )
 
-        full_model.summary()
         return full_model
     
 
@@ -65,7 +101,7 @@ class PrepareBaseModel:
         )
 
         self.save_model(path=self.config.updated_base_model_path, model=self.full_model)
-    
+        self.full_model.summary()
 
 
     @staticmethod

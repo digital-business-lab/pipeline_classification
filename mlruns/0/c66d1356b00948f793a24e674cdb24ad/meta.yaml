@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/Desktop/BHS/Coding/3_ML_Ops_Pipeline_AWS/mlruns/0/c66d1356b00948f793a24e674cdb24ad/artifacts
+end_time: 1732875794007
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c66d1356b00948f793a24e674cdb24ad
+run_name: abrasive-gull-448
+run_uuid: c66d1356b00948f793a24e674cdb24ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732875760746
+status: 4
+tags: []
+user_id: 497c
